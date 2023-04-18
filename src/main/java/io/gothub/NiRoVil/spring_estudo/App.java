@@ -1,7 +1,8 @@
 package io.gothub.NiRoVil.spring_estudo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class App 
 {
 	
-	@Autowired
-	@Qualifier("applicationName")
+	/*
+	 * @Autowired
+	 * @Qualifier("applicationName")
+	 * 
+	 * We could use this annotations in pair with the ConfigurationApp class, or
+	 * by simply using the application.properties file.
+	 * 
+	 * Like below.
+	 */ 
+	@Value("${application.name}")
 	private String applicationName;
 	
 	//@GetMapping - It maps the HTTP GET requests on the specific handler method.
