@@ -1,4 +1,4 @@
-package io.gothub.NiRoVil.spring_estudo.model;
+package io.github.NiRoVil.spring_estudo.model;
 
 public class Client {
 	

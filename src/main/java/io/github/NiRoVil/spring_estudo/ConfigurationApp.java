@@ -1,4 +1,4 @@
-package io.gothub.NiRoVil.spring_estudo;
+package io.github.NiRoVil.spring_estudo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,9 +1,9 @@
-package io.gothub.NiRoVil.spring_estudo.service;
+package io.github.NiRoVil.spring_estudo.service;
 
+import io.github.NiRoVil.spring_estudo.repository.ClientsRepository;
 import org.springframework.stereotype.Service;
 
-import io.gothub.NiRoVil.spring_estudo.model.Client;
-import io.gothub.NiRoVil.spring_estudo.repository.ClientsRepository;
+import io.github.NiRoVil.spring_estudo.model.Client;
 
 //This class is our business rules.
 @Service
